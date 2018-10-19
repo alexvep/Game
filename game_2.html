@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+      <style>
+
+  </style>
+  </head>
+  <body>
+
+    <div class="game" id="game">
+      <h1> Как далеко вы от Царицыно </h1>
+        <label for="yourplace"><h2>Где вы находитесь?</h2></label>
+      <div id="birth">
+      <select name="yourplace" id="yourplace"><option value="125">Дубна</option><option value="173">Рязань</option><option value="165">Тула</option><option value="401">Нижний Новгород</option><option value="464">Воронеж</option><option value="906">Волгоград</option>
+        <option value="1230">Оренбург</option><option value="1490">Челябинск</option><option value="2250">Омск</option><option value="2930">Барнаул</option><option value="4220">Иркутск</option><option value="4760">Чита</option>
+      </select>
+    </div>
+
+
+    <div class="btn_block">
+      <button class="btn_calc" onclick="calc()" style="background-color: #00ff00;">Рассчитать</button>
+    </div>
+    
+
+  </div>
+
+
+
+  </div>
+
+  <script>
+      function calc() {
+        var yourplace = document.getElementById('yourplace');
+
+
+        var result = Math.round(yourplace.value);
+
+        console.log(result);
+
+        document.getElementById('back').innerHTML = result;
+
+        document.getElementById('game').style['display'] = 'none';
+        document.getElementById('res').style['display'] = 'block';
+
+
+
+
+      };
+
+  </script>
+
+  <div  class="game" id="res">
+<h1>Ваше расстояние до парка Царицыно
+<span id="back">
+
+</span> километров</h1>
+    <div class="btn_block">
+      <button class="btn_calc" style="background-color: #00ff00;"><a href="game_2.html">Назад</a></button>
+    </div>
+
+  </div>
+
+
+
+
+  </body>
+</html>

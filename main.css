@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic');
+
+h1,h2 {
+    font-family: Roboto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+ font-family: 'Roboto';
+ background-image: url(images/tsaritsyno.jpg); /* Путь к фоновому изображению */
+ background-repeat: no-repeat; /* Отменяем повторение фона */
+ -moz-background-size: 100%; /* Firefox 3.6+ */
+ -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+ -o-background-size: 100%; /* Opera 9.6+ */
+ background-size: 100%; /* Современные браузеры */
+}
+
+.game {
+  background-color: rgb(255,255,255, 0.7);
+  padding: 1%;
+  max-width: 50%;
+  margin-left: 25%;
+  position: relative;
+}
+
+
+
+.game select {
+    width: 200px;
+    background: none;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    /*-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
+#birth, #hse {
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+    margin: 0 auto 20px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+}
+
+#res {
+display: none;
+
+}
+
+.btn_calc {
+  font-family: roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    margin-right: 14px;
+    z-index: 0;
+    display: inline-block;
+    min-width: 120px;
+    height: 42px;
+    padding: 0 27px;
+    cursor: pointer;
+    word-spacing: -.5px;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    outline: none;
+    white-space: nowrap;
+}
+
+.btn_back {
+  font-family: Roboto;
+    width: 186px;
+    margin-left: 25%;
+    text-align: center;
+   font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    margin-right: 14px;
+    z-index: 0;
+    display: inline-block;
+    min-width: 120px;
+    height: 42px;
+    padding: 0 27px;
+    cursor: pointer;
+    word-spacing: -.5px;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    outline: none;
+    white-space: nowrap;
+}
+
+.btn_block {
+    width: 100%;
+    margin-left: 40%;
+    margin-right: 25%;
+    padding: 10px;
+}
